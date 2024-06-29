@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GS Tech</title>
+
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet"> <!-- End google font  -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <link rel="stylesheet" href="assets/css/remixicon.css">
+
+
+  <!-- Code Editor  -->
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/app.min.css">
+</head>
+
+<style>
+  .sticky-menu .bg-light1 {
+    background-color: #001d61;
+  }
+
+  .bg-light1 {
+    background-color: #f7f7f7;
+  }
+
+  .sticky-menu .nav-link-item {
+    color: white;
+
+  }
+
+  .site-menu-main .nav-link-item:hover {
+    color: #0035af;
+  }
+
+  .sticky-menu .site-menu-main .nav-link-item:hover {
+    color: #febf00;
+  }
+
+  .sticky-menu .mobile-menu-trigger span::before,
+  .sticky-menu .mobile-menu-trigger span::after,
+  .sticky-menu .mobile-menu-trigger span {
+    background-color: white;
+  }
+
+  .tekup-header-top {
+    background-color: #001d61;
+  }
+
+  /* .tekup-header-info ul li a,
+  .tekup-header-info ul li {
+    color: black;
+  } */
+
+  #tekup-default-btn,
+  .tekup-default-btn {
+    background-color: #febf00;
+    color: black !important;
+  }
+
+  .tekup-iconbox-wrap3 img,
+  .tekup-icon-list-wrap2 img,
+  .tekup-thumb-card img,
+  .tekup-iconbox-icon3 img,
+  .tekup-filter-img {
+    filter: hue-rotate(324deg);
+  }
+
+  .loader {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 8px solid rgba(0, 0, 0, 0.3);
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    z-index: 1000;
+    /* Ensure loader appears on top */
+    box-shadow: 13px 12px 12px 10000px #00000073;
+    background-color: transparent;
+    /* Optional: Background color behind the loader */
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+
+<body class="light">
+
+  <div class="tekup-preloader-wrap">
+    <div class="tekup-preloader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div id="home"></div>
+
+  <header class="site-header tekup-header-section site-header--menu-right " id="sticky-menu">
+
+    <div class="tekup-header-top ">
+      <div class="container-fuild">
+        <div class="tekup-header-info-wrap">
+          <div class="tekup-header-info">
+            <ul>
+              <li><i class="ri-map-pin-2-fill"></i>42123, Reggio nell Emilia, Italy</li>
+              <li><a href="tel:123"><i class="ri-phone-fill"></i>518-564-3200</a></li>
+            </ul>
+          </div>
+          <div class="tekup-header-info">
+            <ul>
+              <li><i class="ri-time-fill"></i>Orario di ufficio: 9:00 AM – 18:00 PM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tekup-header-bottom bg-light1">
+      <div class="container-fuild">
+        <nav class="navbar site-navbar">
+          <!-- Brand Logo-->
+          <div class="brand-logo">
+            <a href="#">
+              <img src="assets/images/media/logo.jpeg" alt="" class="light-version-logo">
+            </a>
+          </div>
+          <div class="menu-block-wrapper">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="#home" class="nav-link-item ">Casa</a>
+
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link-item">chi siamo</a>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#services" class="nav-link-item">Servizi</a>
+
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#portfolio" class="nav-link-item drop-trigger">Portafoglio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#testimonials" class="nav-link-item">Testimonianze</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
+            <div class="tekup-header-icon">
+              <a class="tekup-default-btn tekup-header-btn" href="#contact">Mettiti in contatto <i
+                  class="ri-arrow-right-up-line"></i></a>
+            </div>
+          </div>
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </div>
+
+  </header>
+  <!--End landex-header-section -->
+
+
+  <div class="tekup-sidemenu-wraper">
+    <div class="tekup-sidemenu-column">
+      <div class="tekup-sidemenu-body">
+        <div class="tekup-sidemenu-logo">
+          <a href=""><img src="assets/images/v1/logo.svg" alt=""></a>
+        </div>
+        <p>Vast numbers of employees now work remotely, and it’s too late to develop a set of remote-work policies if
+          you didn’t already have one.</p>
+        <div class="tekup-sidemenu-thumb">
+          <img src="assets/images/hero/hero-bg1.png" alt="">
+        </div>
+        <div class="tekup-contact-info-wrap">
+          <div class="tekup-contact-info">
+            <i class="ri-map-pin-2-fill"></i>
+            <h5>Indirizzo</h5>
+            <p>1791 Yorkshire Circle Kitty<br>
+              Hawk, NC 279499</p>
+          </div>
+          <div class="tekup-contact-info">
+            <i class="ri-mail-fill"></i>
+            <h5>Contatto</h5>
+            <a href="mailto:name@email.com">info@mthemeus.com</a>
+            <a href="tel:123">518-564-3200</a>
+          </div>
+        </div>
+        <div class="tekup-social-icon-box">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/">
+                <i class="ri-facebook-fill"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/">
+                <i class="ri-linkedin-fill"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/">
+                <i class="ri-twitter-fill"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/">
+                <i class="ri-instagram-fill"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <span class="tekup-sidemenu-close">
+        <i class="ri-close-line"></i>
+      </span>
+    </div>
+    <div class="offcanvas-overlay"></div>
+
+  </div>
+
+  <div class="offcanves-menu"></div>
+
+  <div class="tekup-hero-section4 mt-4">
+    <div class="container">
+      <div class="tekup-hero-content white-color center">
+        <h1>Forniamo le migliori soluzioni tecnologiche per il tuo business</h1>
+        <p>Siamo architetti dell'innovazione, pionieri del progresso tecnologico e partner del vostro successo. Come
+          organizzazione dinamica e lungimirante</p>
+        <div class="tekup-extra-mt">
+          <div class="tekup-hero-btn-wrap center">
+            <a class="tekup-default-btn" href="#contact">Avvia un progetto <i class="ri-arrow-right-up-line"></i></a>
+            <a class="tekup-default-btn outline-btn-white" href="#portfolio">I nostri lavori <i
+                class="ri-arrow-right-up-line"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="tekup-video-wrap extra-padding-top">
+        <img src="assets/images/media/video-bg.jpg" alt="">
+        <a class="tekup-video-popup video-init" href="https://www.youtube.com/watch?v=Vx2aLNgGoAE">
+          <img src="assets/images/v4/play-btn.png" alt="">
+          <div class="waves wave-1"></div>
+          <div class="waves wave-2"></div>
+          <div class="waves wave-3"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+  <div class="section tekup-section-padding2" id="services">
+    <div class="container">
+      <div class="tekup-section-title center">
+        <h2>Ci occupiamo degli aspetti dei servizi IT professionali</h2>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-md-6">
+          <div class="tekup-iconbox-wrap3 border-all">
+            <div class="tekup-iconbox-icon3">
+              <img src="assets/images/v2/icon3.png" alt="">
+            </div>
+            <div class="tekup-iconbox-data3">
+              <a href="#">
+                <h5>Sviluppo web</h5>
+              </a>
+              <p>Siamo architetti del progresso tecnologico e partner del vostro successo. Come dinamica</p>
+            </div>
+          </div>
+          <div class="tekup-iconbox-wrap3 border-all">
+            <div class="tekup-iconbox-icon3">
+              <img src="assets/images/v2/icon6.png" alt="">
+            </div>
+            <div class="tekup-iconbox-data3">
+              <a href="#">
+                <h5>Marketing digitale</h5>
+              </a>
+              <p>Siamo architetti del progresso tecnologico e partner del vostro successo. Come dinamica</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="tekup-iconbox-wrap3 border-all">
+            <div class="tekup-iconbox-icon3">
+              <img src="assets/images/v2/icon4.png" alt="">
+            </div>
+            <div class="tekup-iconbox-data3">
+              <a href="#">
+                <h5>Sviluppo di app</h5>
+              </a>
+              <p>Siamo architetti del progresso tecnologico e partner del vostro successo. Come dinamica</p>
+            </div>
+          </div>
+          <div class="tekup-iconbox-wrap3 border-all">
+            <div class="tekup-iconbox-icon3">
+              <img src="assets/images/v2/icon7.png" alt="">
+            </div>
+            <div class="tekup-iconbox-data3">
+              <a href="#">
+                <h5>Gestione IT</h5>
+              </a>
+              <p>Siamo architetti del progresso tecnologico e partner del vostro successo. Come dinamica</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-12">
+          <div class="row">
+            <div class="col-xl-12 col-md-6">
+              <div class="tekup-iconbox-wrap3 border-all">
+                <div class="tekup-iconbox-icon3">
+                  <img src="assets/images/v2/icon5.png" alt="">
+                </div>
+                <div class="tekup-iconbox-data3">
+                  <a href="#">
+                    <h5>UI/UX Progetto</h5>
+                  </a>
+                  <p>Siamo architetti del progresso tecnologico e partner del vostro successo. Come dinamica</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-12 col-md-6">
+              <div class="tekup-iconbox-wrap3 border-all">
+                <div class="tekup-iconbox-icon3">
+                  <img src="assets/images/v2/icon8.png" alt="">
+                </div>
+                <div class="tekup-iconbox-data3">
+                  <a href="#">
+                    <h5>Sicurezza informatica</h5>
+                  </a>
+                  <p>Siamo architetti del progresso tecnologico e partner del vostro successo. Come dinamica</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+  <div class="section dark-bg tekup-section-padding" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 order-lg-2">
+          <div class="tekup-thumb ml-30">
+            <img src="assets/images/media/thumb1.png" alt="">
+            <div class="tekup-thumb-card right">
+              <img src="assets/images/v3/rating.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex align-items-center">
+          <div class="tekup-default-content light-color mr-60">
+            <h2>Realizziamo fantastici servizi IT per la tua azienda</h2>
+            <p>Benvenuti alla GS Tech di Schiavo Egidio! Da marzo 2023 ci impegniamo a fornire soluzioni IT affidabili e
+              di alta qualità. La nostra azienda si fonda sulla fiducia e sul rapporto con le nostre clienti.</p>
+            <div class="tekup-extra-mt">
+              <div class="tekup-icon-list-wrap2">
+                <div class="tekup-icon-list-item2">
+                  <div class="tekup-icon-list-icon2">
+                    <img src="assets/images/iconbox/icon8.png" alt="">
+                  </div>
+                  <div class="tekup-icon-list-data2">
+                    <p>Membri del team esperti</p>
+                  </div>
+                </div>
+                <div class="tekup-icon-list-item2">
+                  <div class="tekup-icon-list-icon2">
+                    <img src="assets/images/iconbox/icon9.png" alt="">
+                  </div>
+                  <div class="tekup-icon-list-data2">
+                    <p>Assistenza clienti urgente</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tekup-extra-mt">
+              <a class="tekup-default-btn" href="#more_about">Altro su di noi <i class="ri-arrow-right-up-line"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+
+  <div class="section bg-accent tekup-section-padding3">
+    <div id="tekup-counter"></div>
+    <div class="container">
+      <div class="tekup-counter-wrap4">
+        <div class="tekup-counter-data4">
+          <h2><span data-percentage="26" class="tekup-counter"></span>+</h2>
+          <p>Anni di esperienza</p>
+        </div>
+        <div class="tekup-counter-data4">
+          <h2><span data-percentage="730" class="tekup-counter"></span>+</h2>
+          <p>Progetti con successo</p>
+        </div>
+        <div class="tekup-counter-data4">
+          <h2><span data-percentage="198" class="tekup-counter"></span>+</h2>
+          <p>Clienti felici e soddisfatti</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+
+
+
+  <div class="section tekup-section-padding" id="more_about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="tekup-thumb mr-30">
+            <img src="assets/images/media/thumb2.png" alt="">
+            <div class="tekup-thumb-card right">
+              <img src="assets/images/v3/project-done.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex align-items-center">
+          <div class="tekup-default-content ml-60">
+            <h2>Stiamo aumentando il successo aziendale con la tecnologia</h2>
+            <p>Siamo grati per l'opportunità di collaborare con voi e aiutarvi a raggiungere i vostri obiettivi
+              informatici. Siamo entusiasti di affrontare le sfide tecnologiche e di crescere insieme nel mondo digitale
+              in continua evoluzione. Siamo qui per servirvi e contribuire al vostro successo.</p>
+            <div class="tekup-extra-mt">
+              <div class="skillbar" data-percent="86">
+                <p class="skillbar-lable">
+                  <span class="skill-bar-title">Sicurezza Aziendale</span>
+                  <span class="skill-bar-percent"></span>
+                </p>
+                <div class="skillbar-box">
+                  <p class="skillbar-bar"></p>
+                </div>
+              </div>
+              <div class="skillbar" data-percent="72">
+                <p class="skillbar-lable">
+                  <span class="skill-bar-title">Sviluppo Della Carriera</span>
+                  <span class="skill-bar-percent"></span>
+                </p>
+                <div class="skillbar-box">
+                  <p class="skillbar-bar"></p>
+                </div>
+              </div>
+              <div class="skillbar" data-percent="95">
+                <p class="skillbar-lable">
+                  <span class="skill-bar-title">Innovazione Aziendale</span>
+                  <span class="skill-bar-percent"></span>
+                </p>
+                <div class="skillbar-box">
+                  <p class="skillbar-bar"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+  <div class="section tekup-section-padding-bottom">
+    <div class="container">
+      <div class="tekup-section-title center">
+        <h2>Il nostro processo di lavoro su come far crescere il tuo business</h2>
+      </div>
+      <div class="tekup-iconbox-line" style="background-image: url(assets/images/v1/line.png)">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="tekup-iconbox-wrap2">
+              <div class="tekup-iconbox-icon2">
+                <img src="assets/images/iconbox/icon5.png" alt="">
+                <div class="tekup-iconbox-count">
+                  01
+                </div>
+              </div>
+              <div class="tekup-iconbox-data2">
+                <a href="#">
+                  <h5>Iniziazione e pianificazione</h5>
+                </a>
+                <p>Siamo architetti pionieri dell'innovazione del progresso tecnologico</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="tekup-iconbox-wrap2">
+              <div class="tekup-iconbox-icon2">
+                <img src="assets/images/iconbox/icon6.png" alt="">
+                <div class="tekup-iconbox-count">
+                  02
+                </div>
+              </div>
+              <div class="tekup-iconbox-data2">
+                <a href="#">
+                  <h5>Esecuzione e sviluppo</h5>
+                </a>
+                <p>Siamo architetti pionieri dell'innovazione del progresso tecnologico</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+            <div class="tekup-iconbox-wrap2">
+              <div class="tekup-iconbox-icon2">
+                <img src="assets/images/iconbox/icon7.png" alt="">
+                <div class="tekup-iconbox-count">
+                  03
+                </div>
+              </div>
+              <div class="tekup-iconbox-data2">
+                <a href="#">
+                  <h5>Test e manutenzione</h5>
+                </a>
+                <p>Siamo architetti pionieri dell'innovazione del progresso tecnologico</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+  <div class="section tekup-section-padding bg-light1" id="portfolio">
+    <div class="container">
+      <div class="tekup-section-title center">
+        <h2>Esplora i nostri progetti recenti</h2>
+      </div>
+    </div>
+    <div class="section ">
+      <div class="container">
+        <div class="tekup-portfolio-menu">
+          <ul id="watch-filter-gallery" class="option-set clear-both" data-option-key="filter">
+            <li class="active" data-option-value="*">Mostra tutto</li>
+            <li class="" data-option-value=".development">Sviluppo</li>
+            <li class="" data-option-value=".consultancy">Consulenza informatica</li>
+            <li class="" data-option-value=".security">Sicurezza informatica</li>
+            <li class="" data-option-value=".cloud">Cloud Computing</li>
+          </ul>
+        </div>
+        <div class="tekup-portfolio-column" id="tekup-portfolio-grid">
+          <div class="collection-grid-item cloud consultancy">
+            <div class="tekup-portfolio-wrap">
+              <div class="tekup-portfolio-thumb">
+                <img src="assets/images/media/p_1.png" alt="">
+                <div class="tekup-portfolio-data">
+                  <a href="#">
+                    <h5>CMS Software Solution</h5>
+                  </a>
+                  <p>Sviluppo</p>
+                  <a class="tekup-portfolio-btn" href="#"><i class="ri-arrow-right-up-line"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collection-grid-item development">
+            <div class="tekup-portfolio-wrap">
+              <div class="tekup-portfolio-thumb">
+                <img src="assets/images/media/p_2.png" alt="">
+                <div class="tekup-portfolio-data">
+                  <a href="#">
+                    <h5>Cyber Security Analysis</h5>
+                  </a>
+                  <p>Sicurezza informatica</p>
+                  <a class="tekup-portfolio-btn" href="#"><i class="ri-arrow-right-up-line"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collection-grid-item Security cloud consultancy">
+            <div class="tekup-portfolio-wrap">
+              <div class="tekup-portfolio-thumb">
+                <img src="assets/images/media/p_3.png" alt="">
+                <div class="tekup-portfolio-data">
+                  <a href="#">
+                    <h5>Health App Development</h5>
+                  </a>
+                  <p>Sviluppo</p>
+                  <a class="tekup-portfolio-btn" href="#"><i class="ri-arrow-right-up-line"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collection-grid-item consultancy">
+            <div class="tekup-portfolio-wrap">
+              <div class="tekup-portfolio-thumb">
+                <img src="assets/images/media/p_4.png" alt="">
+                <div class="tekup-portfolio-data">
+                  <a href="#">
+                    <h5>Marketing Agency Website</h5>
+                  </a>
+                  <p>Sviluppo</p>
+                  <a class="tekup-portfolio-btn" href="#"><i class="ri-arrow-right-up-line"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collection-grid-item development security">
+            <div class="tekup-portfolio-wrap">
+              <div class="tekup-portfolio-thumb">
+                <img src="assets/images/media/p_5.png" alt="">
+                <div class="tekup-portfolio-data">
+                  <a href="#">
+                    <h5>Software Development</h5>
+                  </a>
+                  <p>Sicurezza informatica</p>
+                  <a class="tekup-portfolio-btn" href="#"><i class="ri-arrow-right-up-line"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collection-grid-item security">
+            <div class="tekup-portfolio-wrap">
+              <div class="tekup-portfolio-thumb">
+                <img src="assets/images/media/p_6.png" alt="">
+                <div class="tekup-portfolio-data">
+                  <a href="#">
+                    <h5>CMS Software Solutions</h5>
+                  </a>
+                  <p>Sviluppo</p>
+                  <a class="tekup-portfolio-btn" href="#"><i class="ri-arrow-right-up-line"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collection-grid-item consultancy cloud">
+            <div class="tekup-portfolio-wrap">
+              <div class="tekup-portfolio-thumb">
+                <img src="assets/images/media/p_7.png" alt="">
+                <div class="tekup-portfolio-data">
+                  <a href="#">
+                    <h5>Project for Marketing</h5>
+                  </a>
+                  <p>Sviluppo</p>
+                  <a class="tekup-portfolio-btn" href="#"><i class="ri-arrow-right-up-line"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collection-grid-item security cloud">
+            <div class="tekup-portfolio-wrap">
+              <div class="tekup-portfolio-thumb">
+                <img src="assets/images/media/p_8.png" alt="">
+                <div class="tekup-portfolio-data">
+                  <a href="#">
+                    <h5>Digital Product Design</h5>
+                  </a>
+                  <p>Sicurezza informatica</p>
+                  <a class="tekup-portfolio-btn" href="#"><i class="ri-arrow-right-up-line"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collection-grid-item development">
+            <div class="tekup-portfolio-wrap">
+              <div class="tekup-portfolio-thumb">
+                <img src="assets/images/media/p_9.png" alt="">
+                <div class="tekup-portfolio-data">
+                  <a href="#">
+                    <h5>Cyber Security Analysis</h5>
+                  </a>
+                  <p>Sviluppo</p>
+                  <a class="tekup-portfolio-btn" href="#"><i class="ri-arrow-right-up-line"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+  <div class="section tekup-section-padding" id="testimonials">
+    <div class="container">
+      <div class="tekup-section-title center">
+        <h2>Scelto da oltre 200 clienti in tutto il mondo</h2>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-md-6">
+          <div class="tekup-testimonial-box">
+            <div class="tekup-testimonial-rating">
+              <ul>
+                <li><i class="ri-star-s-fill"></i></li>
+                <li><i class="ri-star-s-fill"></i></li>
+                <li><i class="ri-star-s-fill"></i></li>
+                <li><i class="ri-star-s-fill"></i></li>
+                <li><i class="ri-star-s-fill"></i></li>
+              </ul>
+            </div>
+            <p>“ Apprezziamo che il servizio costante e di alta qualità fornito dal loro team vada oltre le
+              preoccupazioni
+              tempestivamente ”</p>
+            <div class="tekup-testimonial-author">
+              <h5>Alexander Cameron</h5>
+              <span>Direttore creativo</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="tekup-testimonial-box">
+            <div class="tekup-testimonial-rating">
+              <ul>
+                <li><i class="ri-star-s-fill"></i></li>
+                <li><i class="ri-star-s-fill"></i></li>
+                <li><i class="ri-star-s-fill"></i></li>
+                <li><i class="ri-star-s-fill"></i></li>
+                <li><i class="ri-star-s-fill"></i></li>
+              </ul>
+            </div>
+            <p>“ Collaborare con è stato un vantaggio per la nostra azienda. La loro dedizione a rimanere al passo con i
+              tempi
+              ultime tendenze del settore ”</p>
+            <div class="tekup-testimonial-author">
+              <h5>Marvin McKinney</h5>
+              <span>Responsabile del prodotto</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="tekup-testimonial-box">
+            <div class="tekup-testimonial-rating">
+              <ul>
+                <li><i class="ri-star-s-fill"></i></li>
+                <li><i class="ri-star-s-fill"></i></li>
+                <li><i class="ri-star-s-fill"></i></li>
+                <li><i class="ri-star-s-fill"></i></li>
+                <li><i class="ri-star-s-fill"></i></li>
+              </ul>
+            </div>
+            <p>“ Apprezziamo che il servizio costante e di alta qualità fornito dal loro team vada oltre le
+              preoccupazioni
+              tempestivamente ”</p>
+            <div class="tekup-testimonial-author">
+              <h5>Brooklyn Simmons</h5>
+              <span>Direttore creativo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End section -->
+  <div class="section tekup-section-padding-bottom" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5 col-lg-6 d-flex align-items-center">
+          <div class="tekup-default-content">
+            <h2>Costruiamo insieme un fantastico progetto</h2>
+            <p>Nella nostra azienda di soluzioni IT, ci impegniamo a fornire un servizio e un supporto clienti
+              eccezionali. Se sei
+              riscontrando difficoltà tecniche o avendo bisogno di assistenza</p>
+            <div class="tekup-contact-info-wrap wrap2">
+              <div class="tekup-contact-info mb-0">
+                <i class="ri-map-pin-2-fill"></i>
+                <h5>Indirizzo</h5>
+                <p>1791 Yorkshire Circle Kitty<br>
+                  Hawk, NC 279499</p>
+              </div>
+              <div class="tekup-contact-info mb-0">
+                <i class="ri-mail-fill"></i>
+                <h5>Contatto</h5>
+                <a href="mailto:name@email.com">info@mthemeus.com</a>
+                <a href="tel:123">518-564-3200</a>
+              </div>
+            </div>
+          </div>
+          <style>
+            .error {
+              color: red;
+              font-size: 0.9em;
+            }
+          </style>
+        </div>
+        <div class="col-xl-6 offset-xl-1 col-lg-6">
+          <div class="tekup-main-form">
+            <h3>Compila il modulo di contatto</h3>
+            <p>Sentiti libero di contattarci, non inviamo spam alla tua email</p>
+            <form id="contactForm" action="#">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="tekup-main-field">
+                    <input type="text" id="nameInput" placeholder="Il tuo nome">
+                    <span id="nameError" class="error"></span>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="tekup-main-field">
+                    <input type="text" id="phoneInput" placeholder="Numero di telefono">
+                    <span id="phoneError" class="error"></span>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="tekup-main-field">
+                    <input type="email" id="emailInput" placeholder="Indirizzo e-mail">
+                    <span id="emailError" class="error"></span>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="tekup-main-field">
+                    <textarea id="messageTextarea" placeholder="Scrivi il tuo messaggio"></textarea>
+                    <span id="messageError" class="error"></span>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <button id="tekup-main-form-btn" type="submit">Invia messaggio <i
+                      class="ri-arrow-right-up-line"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End section -->
+
+  <div class="section bg-light1 tekup-section-padding3">
+    <div class="container">
+      <div class="tekup-section-title center large-width">
+        <h2>Incontra il team dietro GsTech</h2>
+      </div>
+    </div>
+    <div class="tekup-six-column-slider">
+      <div class="tekup-team-wrap">
+        <div class="tekup-team-thumb">
+          <img src="assets/images/media/team1.png" alt="">
+          <div class="tekup-social-icon-box style-four position">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/">
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/">
+                  <i class="ri-twitter-fill"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tekup-team-data tekup-team-data2">
+          <a href="#">
+            <h5>Marvin McKinney</h5>
+          </a>
+          <p>CEO & Founder</p>
+        </div>
+      </div>
+      <div class="tekup-team-wrap">
+        <div class="tekup-team-thumb">
+          <img src="assets/images/media/team2.png" alt="">
+          <div class="tekup-social-icon-box style-four position">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/">
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/">
+                  <i class="ri-twitter-fill"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tekup-team-data tekup-team-data2">
+          <a href="#">
+            <h5>Sophia Rodriguez</h5>
+          </a>
+          <p>Creative Director</p>
+        </div>
+      </div>
+      <div class="tekup-team-wrap">
+        <div class="tekup-team-thumb">
+          <img src="assets/images/media/team3.png" alt="">
+          <div class="tekup-social-icon-box style-four position">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/">
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/">
+                  <i class="ri-twitter-fill"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tekup-team-data tekup-team-data2">
+          <a href="#">
+            <h5>Alexander Cameron</h5>
+          </a>
+          <p>Lead Developer</p>
+        </div>
+      </div>
+      <div class="tekup-team-wrap">
+        <div class="tekup-team-thumb">
+          <img src="assets/images/media/team4.png" alt="">
+          <div class="tekup-social-icon-box style-four position">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/">
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/">
+                  <i class="ri-twitter-fill"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tekup-team-data tekup-team-data2">
+          <a href="#">
+            <h5>Brooklyn Simmons</h5>
+          </a>
+          <p>Product Designer</p>
+        </div>
+      </div>
+      <div class="tekup-team-wrap">
+        <div class="tekup-team-thumb">
+          <img src="assets/images/media/team5.png" alt="">
+          <div class="tekup-social-icon-box style-four position">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/">
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/">
+                  <i class="ri-twitter-fill"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tekup-team-data tekup-team-data2">
+          <a href="#">
+            <h5>Kelly Williams</h5>
+          </a>
+          <p>Digital Marketer</p>
+        </div>
+      </div>
+      <div class="tekup-team-wrap">
+        <div class="tekup-team-thumb">
+          <img src="assets/images/media/team6.png" alt="">
+          <div class="tekup-social-icon-box style-four position">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/">
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/">
+                  <i class="ri-twitter-fill"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tekup-team-data tekup-team-data2">
+          <a href="#">
+            <h5>Kari Rasmussen</h5>
+          </a>
+          <p>Cyber Specialist</p>
+        </div>
+      </div>
+      <div class="tekup-team-wrap">
+        <div class="tekup-team-thumb">
+          <img src="assets/images/media/team3.png" alt="">
+          <div class="tekup-social-icon-box style-four position">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/">
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/">
+                  <i class="ri-twitter-fill"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tekup-team-data tekup-team-data2">
+          <a href="#">
+            <h5>Alexander Cameron</h5>
+          </a>
+          <p>Lead Developer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+  <div class="section tekup-section-padding">
+    <div class="container">
+      <div class="tekup-section-title center">
+        <h2>Perché dovresti sceglierci?</h2>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-md-6">
+          <div class="tekup-iconbox-wrap border-all3 border-all">
+            <div class="tekup-iconbox-icon3">
+              <img src="assets/images/iconbox/icon11.png" alt="">
+            </div>
+            <div class="tekup-iconbox-data3">
+              <a href="#">
+                <h5>Membri del team esperti</h5>
+              </a>
+              <p>Siamo architetti del progresso tecnologico e partner</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="tekup-iconbox-wrap border-all3 border-all">
+            <div class="tekup-iconbox-icon3">
+              <img src="assets/images/iconbox/icon12.png" alt="">
+            </div>
+            <div class="tekup-iconbox-data3">
+              <a href="#">
+                <h5>Servizio clienti più veloce</h5>
+              </a>
+              <p>Siamo architetti del progresso tecnologico e partner</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="tekup-iconbox-wrap border-all3 border-all">
+            <div class="tekup-iconbox-icon3">
+              <img src="assets/images/iconbox/icon13.png" alt="">
+            </div>
+            <div class="tekup-iconbox-data3">
+              <a href="#">
+                <h5>Piano tariffario competitivo</h5>
+              </a>
+              <p>Siamo architetti del progresso tecnologico e partner</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+  <div class="section bg-light1 tekup-section-padding3 ">
+    <div class="container">
+      <div class="tekup-section-title center">
+        <p>Consentire ai professionisti di connettersi con opportunità di alto livello</p>
+      </div>
+      <div class="tekup-brand-slider">
+        <div class="tekup-brand-slider-item">
+          <img src="assets/images/v3/b_1.png" alt="">
+        </div>
+        <div class="tekup-brand-slider-item">
+          <img src="assets/images/v3/b_2.png" alt="">
+        </div>
+        <div class="tekup-brand-slider-item">
+          <img src="assets/images/v3/b_3.png" alt="">
+        </div>
+        <div class="tekup-brand-slider-item">
+          <img src="assets/images/v3/b_4.png" alt="">
+        </div>
+        <div class="tekup-brand-slider-item">
+          <img src="assets/images/v3/b_5.png" alt="">
+        </div>
+        <div class="tekup-brand-slider-item">
+          <img src="assets/images/v3/b_3.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+
+  <div class="section tekup-filter-img  bg-cover" style="background-image: url(assets/images/v1/cta-bg.png)">
+    <div class="container">
+      <div class="tekup-cta-wrap">
+        <div class="tekup-cta-content center">
+          <h2>Lavoriamo insieme</h2>
+          <p>Siamo architetti dell'innovazione, pionieri del progresso e partner del tuo successo. Come dinamica
+            e avanti</p>
+          <div class="tekup-extra-mt">
+            <a class="tekup-default-btn tekup-white-btn" href="#contact">Avvia un progetto <i
+                class="ri-arrow-right-up-line"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+
+  <!-- Footer  -->
+
+  <footer class="tekup-footer-section dark-bg">
+    <div class="container">
+      <div class="tekup-footer-top tekup-section-padding">
+        <div class="row">
+          <div class="col-xl-3 col-lg-12">
+            <div class="tekup-footer-textarea light-color">
+              <a href="#">
+                <img src="assets/images/media/logo.jpeg" alt="">
+              </a>
+              <p>Siamo architetti del progresso e partner del vostro successo. Come attaccante dinamico</p>
+              <div class="tekup-social-icon-box style-two">
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/">
+                      <i class="ri-facebook-fill"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/">
+                      <i class="ri-linkedin-fill"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/">
+                      <i class="ri-twitter-fill"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/">
+                      <i class="ri-instagram-fill"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 offset-xl-1 col-md-3">
+            <div class="tekup-footer-menu light-color">
+              <div class="tekup-footer-title light-color">
+                <h5>Link veloci</h5>
+              </div>
+              <ul>
+                <li><a href="#home">Casa</a></li>
+                <li><a href="#about">chi siamo</a></li>
+                <li><a href="#services">Servizi</a></li>
+                <li><a href="#portfolio">Portafoglio</a></li>
+                <li><a href="#contact">Contattaci</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-4">
+            <div class="tekup-footer-menu light-color extar-margin">
+              <div class="tekup-footer-title light-color">
+                <h5>Servizi</h5>
+              </div>
+              <ul class="footer_services_menu">
+
+                <li><a href="#portfolio" class="development_portfolio">Sviluppo</a></li>
+                <li><a href="#portfolio" class="consultancy_portfolio">Consulenza informatica</a></li>
+                <li><a href="#portfolio" class="security_portfolio">Sicurezza informatica</a></li>
+                <li><a href="#portfolio" class="cloud_portfolio">Cloud Computing</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-5">
+            <div class="tekup-footer-title light-color light-color">
+              <h5>Iscriviti alla nostra newsletter</h5>
+              <p>Preparati a lavorare insieme per trovare la soluzione migliore per la tua azienda</p>
+            </div>
+            <div class="tekup-subscription">
+              <form action="#" id="newsletter">
+                <input type="email" placeholder="Inserisci il tuo email">
+                <span id="newsletterError" class="error" style="color: red;"></span>
+
+                <button id="tekup-subscription-btn" type="submit">
+                  <i class="ri-send-plane-fill"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tekup-footer-bottom">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="tekup-copywright light-color right">
+              <p> &copy; 2024 Tutti i diritti riservati.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="tekup-footer-menu light-color style-two right mb-0">
+              <!-- <ul>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms & Conditions</a></li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <div class="loader"></div>
+
+
+  <!-- scripts -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/menu/menu.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/countdown.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/skill-bar.js"></script>
+  <script src="assets/js/slick-animation.min.js"></script>
+
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+  <script src="assets/js/tabs-slider.js"></script>
+  <script src="assets/js/product-increment.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyArZVfNvjnLNwJZlLJKuOiWHZ6vtQzzb1Y"></script>
+
+  <script src="assets/js/app.js"></script>
+
+
+
+  <script>
+    $(document).ready(function () {
+      $(".footer_services_menu li a.development_portfolio").on('click', function (event) {
+        ;
+        $('#watch-filter-gallery li[data-option-value=".development"]').addClass('active').siblings().removeClass('active');
+      });
+      $(".footer_services_menu li a.consultancy_portfolio").on('click', function (event) {
+
+        $('#watch-filter-gallery li[data-option-value=".consultancy"]').addClass('active').siblings().removeClass('active');
+      });
+      $(".footer_services_menu li a.security_portfolio").on('click', function (event) {
+
+        $('#watch-filter-gallery li[data-option-value=".security"]').addClass('active').siblings().removeClass('active');
+      });
+      $(".footer_services_menu li a.cloud_portfolio").on('click', function (event) {
+
+        $('#watch-filter-gallery li[data-option-value=".cloud"]').addClass('active').siblings().removeClass('active');
+      });
+      function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      }
+
+
+      // Select the form and prevent default submit action
+      const form = document.getElementById('contactForm');
+      form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Reset error messages
+        const errors = document.querySelectorAll('.error');
+        errors.forEach(error => error.textContent = '');
+
+        // Get form values
+        const name = document.getElementById('nameInput').value.trim();
+        const phone = document.getElementById('phoneInput').value.trim();
+        const email = document.getElementById('emailInput').value.trim();
+        const message = document.getElementById('messageTextarea').value.trim();
+
+        // Validate each field
+        let hasErrors = false;
+
+        if (name === '') {
+          document.getElementById('nameError').textContent = 'Il campo nome è obbligatorio';
+          hasErrors = true;
+        }
+
+        if (phone === '') {
+          document.getElementById('phoneError').textContent = 'Il campo numero di telefono è obbligatorio';
+          hasErrors = true;
+        }
+
+        if (email === '') {
+          document.getElementById('emailError').textContent = 'Il campo indirizzo e-mail è obbligatorio';
+          hasErrors = true;
+        } else if (!isValidEmail(email)) {
+          document.getElementById('emailError').textContent = 'Inserisci un indirizzo e-mail valido';
+          hasErrors = true;
+        }
+
+        if (message === '') {
+          document.getElementById('messageError').textContent = 'Il campo messaggio è obbligatorio';
+          hasErrors = true;
+        }
+
+        // If no errors, submit the form via AJAX
+        if (!hasErrors) {
+          // Gather form data
+          let formData = {
+            name: name,
+            phone: phone,
+            email: email,
+            message: message
+          };
+
+          // Show loader
+          $('.loader').show();
+
+          // Perform AJAX request
+          $.ajax({
+            url: "https://formsubmit.co/ajax/repartoit@gstech-it.com",
+            method: "POST",
+            data: formData,
+            dataType: "json",
+            success: function (response) {
+              // Hide loader
+              $('.loader').hide();
+
+              // Handle success response
+              console.log('Form submission successful:', response);
+              alert('Form submitted successfully!');
+              form.reset(); // Reset form after successful submission
+            },
+            error: function (xhr, status, error) {
+              // Hide loader
+              $('.loader').hide();
+
+              // Handle error
+              console.error('Form submission error:', error);
+              alert('Error submitting form. Please try again later.');
+            }
+          });
+        }
+      });
+
+      // Select the newsletter form and prevent default submit action
+      const newsletterForm = document.getElementById('newsletter');
+      newsletterForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Reset error messages (if any)
+        const errorSpan = document.getElementById('newsletterError');
+        errorSpan.textContent = '';
+
+        // Get email input value
+        const email = document.querySelector('#newsletter input[type="email"]').value.trim();
+
+        // Validate email
+        if (email === '' || !isValidEmail(email)) {
+          errorSpan.textContent = 'Inserisci un indirizzo e-mail valido';
+          return;
+        }
+
+        // Gather form data
+        var formData = {
+          email_newsletter: email
+        };
+
+        // Show loader
+        $('.loader').show();
+
+        // Perform AJAX request
+        $.ajax({
+          url: "https://formsubmit.co/ajax/repartoit@gstech-it.com",
+          method: "POST",
+          data: formData,
+          dataType: "json",
+          success: function (response) {
+            // Hide loader
+            $('.loader').hide();
+
+            // Handle success response
+            console.log('Newsletter subscription successful:', response);
+            alert('Email subscribed successfully!');
+            newsletterForm.reset(); // Reset form after successful submission
+          },
+          error: function (xhr, status, error) {
+            // Hide loader
+            $('.loader').hide();
+
+            // Handle error
+            console.error('Newsletter subscription error:', error);
+            alert('Error subscribing email. Please try again later.');
+          }
+        });
+      });
+    });
+
+  </script>
+</body>
+
+</html>
